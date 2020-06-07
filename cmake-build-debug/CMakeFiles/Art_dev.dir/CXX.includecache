@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Input.cpp
+Input.h
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Input.h
+
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Input.h
+Kbd.h
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Kbd.h
+Mouse.h
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Mouse.h
+iostream
+-
+thread
+-
+
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Kbd.h
+../Windows.h
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Windows.h
+KeyList.h
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/KeyList.h
+queue
+-
+bitset
+-
+
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/KeyList.h
+
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Mouse.h
+../Windows.h
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Windows.h
+bitset
+-
+
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Windows.h
+sdkddkver.h
+-
+Windows.h
+-
+
