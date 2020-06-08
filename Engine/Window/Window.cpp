@@ -4,30 +4,36 @@ Window::Window(int width, int height, const char *name)
 {
     this->width = width;
     this->height = height;
+    this->screenY = 0;
+    this->screenX = 0;
+    this->hmonitor = {};
+
+    getScreenResolution();
+
     windowClass = new WindowClass;
     windowClass->wndClass.lpfnWndProc = HandleMsgSetup;
     windowClass->RegisterWindowClass();
 
     std::cout << "Creating actualWindow" << std::endl;
+    std::cout << "Default width: " << screenX << std::endl;
+    std::cout << "Default height: " << screenY << std::endl;
 
-    RECT windowsRect;
-    windowsRect.left = 100;
-    windowsRect.right = width + windowsRect.left;
-    windowsRect.top = 100;
-    windowsRect.bottom = windowsRect.top + height;
-    AdjustWindowRect(&windowsRect, WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU, false);
 
+    posInScreenX = screenX-width > 0 ? (screenX-width)/2 : 0;
+    posInScreenY = screenY-height > 0 ? (screenY-height)/2 : 0;
 
     actualWindow = CreateWindowExA(0, WindowClass::GetName(), name,
-                                   WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU, 500, 500,
-                                   600, 600,
+                                   WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU, posInScreenX, posInScreenY,
+                                   width, height,
                                    nullptr, nullptr, windowClass->GetInstance(), this);
 
     if(actualWindow == nullptr)
         throw WND_LAST_EXCEPTION();
 
+    context = Context(actualWindow, width, height);
+
     inputController = Input::getInstance();
-    inputController->setContext(actualWindow);
+    inputController->setContext(context);
     ShowWindow(actualWindow, SW_SHOWDEFAULT);
 }
 
@@ -38,6 +44,19 @@ Window::~Window()
     delete windowClass;
 }
 
+
+void Window::getScreenResolution()
+{
+    hmonitor = MonitorFromWindow(nullptr, MONITOR_DEFAULTTOPRIMARY);
+    info.cbSize = sizeof(MONITORINFOEX);
+    int res = GetMonitorInfoA(hmonitor, &info);
+    if(res == 0)
+    {
+        exit(-1);
+    }
+    this->screenX = info.rcMonitor.right;
+    this->screenY = info.rcMonitor.bottom;
+}
 
 LRESULT Window::HandleMsgSetup(HWND actualWindow, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
@@ -65,48 +84,6 @@ LRESULT Window::HandleMsg(HWND window, UINT uMsg, WPARAM wParam, LPARAM lParam)
         case WM_CLOSE:
             PostQuitMessage(0);
             break;
-        case WM_MOUSEMOVE:
-            {
-                Vector2 coords = inputController->getMousePos();
-
-                if(coords.x >= 0 && coords.x < width && coords.y >= 0 && coords.y < height)
-                {
-                    if(!inputController->isInWindow())
-                    {
-                        inputController->onMouseEnter();
-                    }
-                    std::cout << "In window: " << inputController->isInWindow() << std::endl;
-                }
-                else
-                {
-                    if(inputController->isInWindow())
-                    {
-                        inputController->onMouseLeave();
-                    }
-                    std::cout << "In window: " << inputController->isInWindow() << std::endl;
-
-                    /*if(wParam & (MK_LBUTTON | MK_RBUTTON))
-                    {
-                        inputController->setMousePos(Vector2(coords.x, coords.y));
-                    }
-                    else
-                    {
-                        ReleaseCapture();
-                        inputController->onMouseLeave();
-                    }*/
-                }
-
-            }
-            break;
-        /*case WM_LBUTTONDOWN:
-        case WM_LBUTTONUP:
-            {
-                const POINTS coords = MAKEPOINTS(lParam);
-                POINT pos;
-                GetCursorPos(&pos);
-                inputController->setMousePos(Vector2(pos.x, pos.y));
-            }
-            break;*/
         default:
             break;
     }
@@ -126,7 +103,7 @@ std::optional<int> Window::processMessage()
         TranslateMessage(&msg);
         DispatchMessageA(&msg);
     }
-    return {};
+    return std::nullopt;
 }
 
 void Window::setWindowTitle(const char *title)

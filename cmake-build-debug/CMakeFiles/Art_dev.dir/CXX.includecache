@@ -12,9 +12,17 @@ iostream
 sstream
 -
 
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Input.cpp
+iostream
+-
+Input.h
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Input.h
+
 C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Input.h
 ../Windows.h
 C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Windows.h
+../Window/Context.h
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Context.h
 ../Math/Vector2.h
 C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Math/Vector2.h
 KeyList.h
@@ -29,6 +37,10 @@ C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/KeyList.h
 C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Math/Vector2.h
 cmath
 -
+
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Context.h
+../Windows.h
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Windows.h
 
 C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Window.cpp
 Window.h

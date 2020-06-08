@@ -111,6 +111,12 @@
 		<Unit filename="C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Math/Vector2.h">
 			<Option target="Art_dev"/>
 		</Unit>
+		<Unit filename="C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Context.cpp">
+			<Option target="Art_dev"/>
+		</Unit>
+		<Unit filename="C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Context.h">
+			<Option target="Art_dev"/>
+		</Unit>
 		<Unit filename="C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Window.cpp">
 			<Option target="Art_dev"/>
 		</Unit>

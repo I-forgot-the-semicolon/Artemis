@@ -22,6 +22,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     {
         MessageBoxA(nullptr, "Undefined error", "Err", MB_OK|MB_ICONEXCLAMATION);
     }
+    return -1;
 }
 
 

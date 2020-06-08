@@ -1,6 +1,7 @@
 #ifndef ART_DEV_INPUT_H
 #define ART_DEV_INPUT_H
 #include "../Windows.h"
+#include "../Window/Context.h"
 #include "../Math/Vector2.h"
 #include "KeyList.h"
 #include <queue>
@@ -16,7 +17,9 @@ private:
     //Mouse section
     Vector2 mousePos;
     bool inWindow;
+    Context context;
     HWND actualWindow;
+    int windowWidth, windowHeight;
 
 private:
     void pollKey(unsigned char keycode);
@@ -30,8 +33,8 @@ public:
     Input& operator=(const Input&) = delete;
 
     /* Window Specific*/
-    void setContext(HWND context);
-    HWND getContext();
+    void setContext(Context inputContext);
+    Context getContext();
 
     /* Poll Input specific */
     void PollInput();

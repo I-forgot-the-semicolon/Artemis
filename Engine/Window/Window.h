@@ -1,5 +1,6 @@
 #ifndef ART_DEV_WINDOW_H
 #define ART_DEV_WINDOW_H
+
 #include "../Windows.h"
 #include "WindowClass.h"
 #include "../ErrorHandlers/ErrorHandler.h"
@@ -12,13 +13,20 @@
 class Window
 {
 private:
+    int screenX, screenY;
     int width, height;
+    int posInScreenX, posInScreenY;
+    HMONITOR hmonitor;
     HWND actualWindow;
+    MONITORINFOEX info{};
+    Context context;
     WindowClass *windowClass;
     Input *inputController;
 
 private:
-    //Handlers
+    void getScreenResolution();
+
+    /* Handlers */
     static LRESULT WINAPI HandleMsgSetup(HWND window, UINT uMsg, WPARAM wParam, LPARAM lParam);
     static LRESULT WINAPI HandleMsgThunk(HWND window, UINT uMsg, WPARAM wParam, LPARAM lParam);
     LRESULT HandleMsg(HWND window, UINT uMsg, WPARAM wParam, LPARAM lParam);
@@ -28,8 +36,8 @@ public:
     ~Window();
     Window(const Window&) = delete;
     Window& operator=(const Window&) = delete;
-    void setWindowTitle(const char *title);
     static std::optional<int> processMessage();
+    void setWindowTitle(const char *title);
 
 public:
     class Exception : public ErrorHandler

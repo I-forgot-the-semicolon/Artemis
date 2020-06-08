@@ -232,6 +232,33 @@ Engine\Math\Vector2.cpp.s:
 	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.s
 .PHONY : Engine\Math\Vector2.cpp.s
 
+Engine\Window\Context.obj: Engine\Window\Context.cpp.obj
+
+.PHONY : Engine\Window\Context.obj
+
+# target to build an object file
+Engine\Window\Context.cpp.obj:
+	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\Window\Context.cpp.obj
+.PHONY : Engine\Window\Context.cpp.obj
+
+Engine\Window\Context.i: Engine\Window\Context.cpp.i
+
+.PHONY : Engine\Window\Context.i
+
+# target to preprocess a source file
+Engine\Window\Context.cpp.i:
+	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\Window\Context.cpp.i
+.PHONY : Engine\Window\Context.cpp.i
+
+Engine\Window\Context.s: Engine\Window\Context.cpp.s
+
+.PHONY : Engine\Window\Context.s
+
+# target to generate assembly for a file
+Engine\Window\Context.cpp.s:
+	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\Window\Context.cpp.s
+.PHONY : Engine\Window\Context.cpp.s
+
 Engine\Window\Window.obj: Engine\Window\Window.cpp.obj
 
 .PHONY : Engine\Window\Window.obj
@@ -334,6 +361,9 @@ help:
 	@echo ... Engine/Math/Vector2.obj
 	@echo ... Engine/Math/Vector2.i
 	@echo ... Engine/Math/Vector2.s
+	@echo ... Engine/Window/Context.obj
+	@echo ... Engine/Window/Context.i
+	@echo ... Engine/Window/Context.s
 	@echo ... Engine/Window/Window.obj
 	@echo ... Engine/Window/Window.i
 	@echo ... Engine/Window/Window.s

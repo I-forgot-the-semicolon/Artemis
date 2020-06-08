@@ -8,6 +8,7 @@ CMakeFiles/Art_dev.dir/Engine/App/GameLoop.cpp.obj
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Input.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/KeyList.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Math/Vector2.h
+ C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Context.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Window.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/WindowClass.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Windows.h
@@ -19,15 +20,21 @@ CMakeFiles/Art_dev.dir/Engine/Input/Input.cpp.obj
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Input.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/KeyList.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Math/Vector2.h
+ C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Context.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Windows.h
 CMakeFiles/Art_dev.dir/Engine/Math/Vector2.cpp.obj
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Math/Vector2.cpp
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Math/Vector2.h
+CMakeFiles/Art_dev.dir/Engine/Window/Context.cpp.obj
+ C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Context.cpp
+ C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Context.h
+ C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Windows.h
 CMakeFiles/Art_dev.dir/Engine/Window/Window.cpp.obj
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/ErrorHandlers/ErrorHandler.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Input.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/KeyList.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Math/Vector2.h
+ C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Context.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Window.cpp
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Window.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/WindowClass.h
@@ -42,6 +49,7 @@ CMakeFiles/Art_dev.dir/main.cpp.obj
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Input.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/KeyList.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Math/Vector2.h
+ C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Context.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Window.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/WindowClass.h
  C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Windows.h

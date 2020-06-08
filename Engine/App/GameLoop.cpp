@@ -3,7 +3,7 @@
 
 GameLoop::GameLoop()
 {
-    window = new Window(600, 600, "Main Window");
+    window = new Window(1280, 720, "Main Window");
     input = Input::getInstance();
 }
 
@@ -33,14 +33,14 @@ void GameLoop::manageInput()
         PostQuitMessage(1);
     }
 
-    /*if(!input->isInWindow())
+    if(!input->isInWindow())
     {
         std::cout << "out!" << std::endl;
     }
     else
     {
         std::cout << "in!" << std::endl;
-    }*/
+    }
 
     std::stringstream ss;
     ss << input->getMouseX() << "," << input->getMouseY();

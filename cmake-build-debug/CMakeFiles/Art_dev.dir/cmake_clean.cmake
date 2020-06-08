@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Art_dev.dir/Engine/ErrorHandlers/ErrorHandler.cpp.obj"
   "CMakeFiles/Art_dev.dir/Engine/Input/Input.cpp.obj"
   "CMakeFiles/Art_dev.dir/Engine/Math/Vector2.cpp.obj"
+  "CMakeFiles/Art_dev.dir/Engine/Window/Context.cpp.obj"
   "CMakeFiles/Art_dev.dir/Engine/Window/Window.cpp.obj"
   "CMakeFiles/Art_dev.dir/Engine/Window/WindowClass.cpp.obj"
   "CMakeFiles/Art_dev.dir/main.cpp.obj"

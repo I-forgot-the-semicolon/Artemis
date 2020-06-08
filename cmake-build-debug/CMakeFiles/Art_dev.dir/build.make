@@ -191,6 +191,25 @@ CMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.s /c C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\Math\Vector2.cpp
 <<
 
+CMakeFiles\Art_dev.dir\Engine\Window\Context.cpp.obj: CMakeFiles\Art_dev.dir\flags.make
+CMakeFiles\Art_dev.dir\Engine\Window\Context.cpp.obj: ..\Engine\Window\Context.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Art_dev.dir/Engine/Window/Context.cpp.obj"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Art_dev.dir\Engine\Window\Context.cpp.obj /FdCMakeFiles\Art_dev.dir\ /FS -c C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\Window\Context.cpp
+<<
+
+CMakeFiles\Art_dev.dir\Engine\Window\Context.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Art_dev.dir/Engine/Window/Context.cpp.i"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\Art_dev.dir\Engine\Window\Context.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\Window\Context.cpp
+<<
+
+CMakeFiles\Art_dev.dir\Engine\Window\Context.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Art_dev.dir/Engine/Window/Context.cpp.s"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Art_dev.dir\Engine\Window\Context.cpp.s /c C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\Window\Context.cpp
+<<
+
 # Object files for target Art_dev
 Art_dev_OBJECTS = \
 "CMakeFiles\Art_dev.dir\main.cpp.obj" \
@@ -199,7 +218,8 @@ Art_dev_OBJECTS = \
 "CMakeFiles\Art_dev.dir\Engine\ErrorHandlers\ErrorHandler.cpp.obj" \
 "CMakeFiles\Art_dev.dir\Engine\Input\Input.cpp.obj" \
 "CMakeFiles\Art_dev.dir\Engine\App\GameLoop.cpp.obj" \
-"CMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.obj"
+"CMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.obj" \
+"CMakeFiles\Art_dev.dir\Engine\Window\Context.cpp.obj"
 
 # External object files for target Art_dev
 Art_dev_EXTERNAL_OBJECTS =
@@ -211,9 +231,10 @@ Art_dev.exe: CMakeFiles\Art_dev.dir\Engine\ErrorHandlers\ErrorHandler.cpp.obj
 Art_dev.exe: CMakeFiles\Art_dev.dir\Engine\Input\Input.cpp.obj
 Art_dev.exe: CMakeFiles\Art_dev.dir\Engine\App\GameLoop.cpp.obj
 Art_dev.exe: CMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.obj
+Art_dev.exe: CMakeFiles\Art_dev.dir\Engine\Window\Context.cpp.obj
 Art_dev.exe: CMakeFiles\Art_dev.dir\build.make
 Art_dev.exe: CMakeFiles\Art_dev.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Art_dev.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Art_dev.exe"
 	"C:\Program Files\JetBrains\CLion 2020.1.1\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\Art_dev.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100183~1.0\x86\mt.exe --manifests  -- C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\Art_dev.dir\objects1.rsp @<<
  /out:Art_dev.exe /implib:Art_dev.lib /pdb:C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\cmake-build-debug\Art_dev.pdb /version:0.0  /machine:X86 /debug /INCREMENTAL /subsystem:windows  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

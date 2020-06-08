@@ -3,6 +3,9 @@
 
 Input::Input()
 {
+    context = Context();
+    windowWidth = 0;
+    windowHeight = 0;
     actualWindow = nullptr;
     inWindow = false;
     mousePos = Vector2();
@@ -50,14 +53,16 @@ Input *Input::getInstance()
     return inputController;
 }
 
-void Input::setContext(HWND context)
+void Input::setContext(Context inputContext)
 {
-    this->actualWindow = context;
+    this->actualWindow = inputContext.getWindow();
+    this->windowWidth = inputContext.getWindowWidth();
+    this->windowHeight = inputContext.getWindowHeight();
 }
 
-HWND Input::getContext()
+Context Input::getContext()
 {
-    return actualWindow;
+    return context;
 }
 
 void Input::pollKey(unsigned char keycode)
@@ -71,10 +76,29 @@ void Input::pollKey(unsigned char keycode)
 
 void Input::pollMouse()
 {
+    /* We fetch the mouse position and we map it to window position equivalent, then
+       we update the mouse position. */
     POINT pos;
     GetCursorPos(&pos);
     ScreenToClient(actualWindow, &pos);
     setMousePos(Vector2(pos.x, pos.y));
+
+    /* Check if the mouse is inside the window and then update the information
+       about it. */
+    if(pos.x >= 0 && pos.x < windowWidth && pos.y >= 0 & pos.y < windowHeight)
+    {
+        if(!isInWindow())
+        {
+            onMouseEnter();
+        }
+    }
+    else
+    {
+        if(isInWindow())
+        {
+            onMouseLeave();
+        }
+    }
 }
 
 void Input::PollInput()
