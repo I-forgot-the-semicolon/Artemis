@@ -1,30 +1,58 @@
 #ifndef ART_DEV_INPUT_H
 #define ART_DEV_INPUT_H
-#include "Kbd.h"
-#include "Mouse.h"
-#include <iostream>
-#include <thread>
+#include "../Windows.h"
+#include "../Math/Vector2.h"
+#include "KeyList.h"
+#include <queue>
+#include <bitset>
 
 class Input
 {
+    friend class Window;
 private:
-    int *running;
-    Mouse* mouse;
-    Kbd* keyboard;
-    std::thread inputThread;
+    static constexpr unsigned int nKeys = 256u;
+    std::bitset<nKeys> lastFrameKeysEvents;
+    std::bitset<nKeys> actualFrameKeysEvents;
+    //Mouse section
+    Vector2 mousePos;
+    bool inWindow;
+    HWND actualWindow;
+
+private:
+    void pollKey(unsigned char keycode);
+    void pollMouse();
+    void setMousePos(Vector2 pos);
+    void ClearState();
 
 public:
-    explicit Input(int *context);
-    ~Input();
+    Input();
     Input(const Input&) = delete;
     Input& operator=(const Input&) = delete;
 
-    void inputLoop();
+    /* Window Specific*/
+    void setContext(HWND context);
+    HWND getContext();
 
+    /* Poll Input specific */
+    void PollInput();
+
+    /* Key events specific */
+    int getKey(unsigned char keycode);
     bool getKeyDown(unsigned char keycode);
-    [[nodiscard]] bool getKeyPressed(unsigned char keycode) const;
-    [[nodiscard]] unsigned int getMouseX() const;
+    bool getKeyPressed(unsigned char keycode);
+    bool getKeyUp(unsigned char keycode);
 
+    /* Mouse specific */
+    void onMouseEnter();
+    void onMouseLeave();
+    [[nodiscard]] bool isInWindow() const;
+    Vector2 getMousePos();
+    [[nodiscard]] int getMouseX() const;
+    [[nodiscard]] int getMouseY() const;
+
+    /* Instance */
+    static Input *inputController;
+    static Input* getInstance();
 };
 
 

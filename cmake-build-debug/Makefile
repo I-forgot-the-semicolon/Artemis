@@ -124,6 +124,33 @@ Art_dev\fast:
 	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\build
 .PHONY : Art_dev\fast
 
+Engine\App\GameLoop.obj: Engine\App\GameLoop.cpp.obj
+
+.PHONY : Engine\App\GameLoop.obj
+
+# target to build an object file
+Engine\App\GameLoop.cpp.obj:
+	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\App\GameLoop.cpp.obj
+.PHONY : Engine\App\GameLoop.cpp.obj
+
+Engine\App\GameLoop.i: Engine\App\GameLoop.cpp.i
+
+.PHONY : Engine\App\GameLoop.i
+
+# target to preprocess a source file
+Engine\App\GameLoop.cpp.i:
+	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\App\GameLoop.cpp.i
+.PHONY : Engine\App\GameLoop.cpp.i
+
+Engine\App\GameLoop.s: Engine\App\GameLoop.cpp.s
+
+.PHONY : Engine\App\GameLoop.s
+
+# target to generate assembly for a file
+Engine\App\GameLoop.cpp.s:
+	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\App\GameLoop.cpp.s
+.PHONY : Engine\App\GameLoop.cpp.s
+
 Engine\ErrorHandlers\ErrorHandler.obj: Engine\ErrorHandlers\ErrorHandler.cpp.obj
 
 .PHONY : Engine\ErrorHandlers\ErrorHandler.obj
@@ -178,59 +205,32 @@ Engine\Input\Input.cpp.s:
 	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\Input\Input.cpp.s
 .PHONY : Engine\Input\Input.cpp.s
 
-Engine\Input\Kbd.obj: Engine\Input\Kbd.cpp.obj
+Engine\Math\Vector2.obj: Engine\Math\Vector2.cpp.obj
 
-.PHONY : Engine\Input\Kbd.obj
-
-# target to build an object file
-Engine\Input\Kbd.cpp.obj:
-	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\Input\Kbd.cpp.obj
-.PHONY : Engine\Input\Kbd.cpp.obj
-
-Engine\Input\Kbd.i: Engine\Input\Kbd.cpp.i
-
-.PHONY : Engine\Input\Kbd.i
-
-# target to preprocess a source file
-Engine\Input\Kbd.cpp.i:
-	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\Input\Kbd.cpp.i
-.PHONY : Engine\Input\Kbd.cpp.i
-
-Engine\Input\Kbd.s: Engine\Input\Kbd.cpp.s
-
-.PHONY : Engine\Input\Kbd.s
-
-# target to generate assembly for a file
-Engine\Input\Kbd.cpp.s:
-	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\Input\Kbd.cpp.s
-.PHONY : Engine\Input\Kbd.cpp.s
-
-Engine\Input\Mouse.obj: Engine\Input\Mouse.cpp.obj
-
-.PHONY : Engine\Input\Mouse.obj
+.PHONY : Engine\Math\Vector2.obj
 
 # target to build an object file
-Engine\Input\Mouse.cpp.obj:
-	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\Input\Mouse.cpp.obj
-.PHONY : Engine\Input\Mouse.cpp.obj
+Engine\Math\Vector2.cpp.obj:
+	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.obj
+.PHONY : Engine\Math\Vector2.cpp.obj
 
-Engine\Input\Mouse.i: Engine\Input\Mouse.cpp.i
+Engine\Math\Vector2.i: Engine\Math\Vector2.cpp.i
 
-.PHONY : Engine\Input\Mouse.i
+.PHONY : Engine\Math\Vector2.i
 
 # target to preprocess a source file
-Engine\Input\Mouse.cpp.i:
-	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\Input\Mouse.cpp.i
-.PHONY : Engine\Input\Mouse.cpp.i
+Engine\Math\Vector2.cpp.i:
+	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.i
+.PHONY : Engine\Math\Vector2.cpp.i
 
-Engine\Input\Mouse.s: Engine\Input\Mouse.cpp.s
+Engine\Math\Vector2.s: Engine\Math\Vector2.cpp.s
 
-.PHONY : Engine\Input\Mouse.s
+.PHONY : Engine\Math\Vector2.s
 
 # target to generate assembly for a file
-Engine\Input\Mouse.cpp.s:
-	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\Input\Mouse.cpp.s
-.PHONY : Engine\Input\Mouse.cpp.s
+Engine\Math\Vector2.cpp.s:
+	$(MAKE) -f CMakeFiles\Art_dev.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.s
+.PHONY : Engine\Math\Vector2.cpp.s
 
 Engine\Window\Window.obj: Engine\Window\Window.cpp.obj
 
@@ -322,18 +322,18 @@ help:
 	@echo ... Art_dev
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... Engine/App/GameLoop.obj
+	@echo ... Engine/App/GameLoop.i
+	@echo ... Engine/App/GameLoop.s
 	@echo ... Engine/ErrorHandlers/ErrorHandler.obj
 	@echo ... Engine/ErrorHandlers/ErrorHandler.i
 	@echo ... Engine/ErrorHandlers/ErrorHandler.s
 	@echo ... Engine/Input/Input.obj
 	@echo ... Engine/Input/Input.i
 	@echo ... Engine/Input/Input.s
-	@echo ... Engine/Input/Kbd.obj
-	@echo ... Engine/Input/Kbd.i
-	@echo ... Engine/Input/Kbd.s
-	@echo ... Engine/Input/Mouse.obj
-	@echo ... Engine/Input/Mouse.i
-	@echo ... Engine/Input/Mouse.s
+	@echo ... Engine/Math/Vector2.obj
+	@echo ... Engine/Math/Vector2.i
+	@echo ... Engine/Math/Vector2.s
 	@echo ... Engine/Window/Window.obj
 	@echo ... Engine/Window/Window.i
 	@echo ... Engine/Window/Window.s

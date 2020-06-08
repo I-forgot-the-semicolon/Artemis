@@ -19,15 +19,15 @@ Window::Window(int width, int height, const char *name)
 
 
     actualWindow = CreateWindowExA(0, WindowClass::GetName(), name,
-                                   WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU, 100, 100,
+                                   WS_CAPTION | WS_MINIMIZEBOX | WS_SYSMENU, 500, 500,
                                    600, 600,
                                    nullptr, nullptr, windowClass->GetInstance(), this);
 
     if(actualWindow == nullptr)
         throw WND_LAST_EXCEPTION();
 
-    inputController = Kbd::getInstance();
-    mouseController = Mouse::getInstance();
+    inputController = Input::getInstance();
+    inputController->setContext(actualWindow);
     ShowWindow(actualWindow, SW_SHOWDEFAULT);
 }
 
@@ -49,7 +49,6 @@ LRESULT Window::HandleMsgSetup(HWND actualWindow, UINT uMsg, WPARAM wParam, LPAR
         SetWindowLongPtr(actualWindow, GWLP_WNDPROC, reinterpret_cast<LONG_PTR>(&Window::HandleMsgThunk));
         return pWnd->HandleMsg(actualWindow, uMsg, wParam, lParam);
     }
-    std::cout << "Config setup" << std::endl;
     return DefWindowProcA(actualWindow, uMsg, wParam, lParam);
 }
 
@@ -66,33 +65,75 @@ LRESULT Window::HandleMsg(HWND window, UINT uMsg, WPARAM wParam, LPARAM lParam)
         case WM_CLOSE:
             PostQuitMessage(0);
             break;
-        case WM_KEYDOWN:
-            std::cout << "Pressed: " << wParam << std::endl;
-            inputController->OnKeyPressed(static_cast<unsigned char>(wParam), (lParam >> 30));
+        case WM_MOUSEMOVE:
+            {
+                Vector2 coords = inputController->getMousePos();
+
+                if(coords.x >= 0 && coords.x < width && coords.y >= 0 && coords.y < height)
+                {
+                    if(!inputController->isInWindow())
+                    {
+                        inputController->onMouseEnter();
+                    }
+                    std::cout << "In window: " << inputController->isInWindow() << std::endl;
+                }
+                else
+                {
+                    if(inputController->isInWindow())
+                    {
+                        inputController->onMouseLeave();
+                    }
+                    std::cout << "In window: " << inputController->isInWindow() << std::endl;
+
+                    /*if(wParam & (MK_LBUTTON | MK_RBUTTON))
+                    {
+                        inputController->setMousePos(Vector2(coords.x, coords.y));
+                    }
+                    else
+                    {
+                        ReleaseCapture();
+                        inputController->onMouseLeave();
+                    }*/
+                }
+
+            }
             break;
-        case WM_KEYUP:
-            inputController->OnKeyReleased(static_cast<unsigned char>(wParam));
-            break;
-        case WM_LBUTTONDOWN:
-            mouseController->onButtonPress(Key_Left_Button, lParam);
-            break;
+        /*case WM_LBUTTONDOWN:
         case WM_LBUTTONUP:
-            mouseController->onButtonRelease(Key_Left_Button, lParam);
-            break;
-        case WM_RBUTTONDOWN:
-            mouseController->onButtonPress(Key_Right_Button, lParam);
-            break;
+            {
+                const POINTS coords = MAKEPOINTS(lParam);
+                POINT pos;
+                GetCursorPos(&pos);
+                inputController->setMousePos(Vector2(pos.x, pos.y));
+            }
+            break;*/
         default:
             break;
     }
     return DefWindowProcA(window, uMsg, wParam, lParam);
 }
 
-
-Window::Exception::Exception(int line, const char *file, HRESULT hResult) : ErrorHandler(line, file)
+std::optional<int> Window::processMessage()
 {
-    this->hResult = hResult;
+    MSG msg;
+    while(PeekMessageA(&msg, nullptr, 0, 0, PM_REMOVE))
+    {
+        if(msg.message == WM_QUIT)
+        {
+            return msg.wParam;
+        }
+
+        TranslateMessage(&msg);
+        DispatchMessageA(&msg);
+    }
+    return {};
 }
+
+void Window::setWindowTitle(const char *title)
+{
+    SetWindowTextA(actualWindow, title);
+}
+
 
 const char *Window::Exception::what() const noexcept
 {
@@ -142,6 +183,11 @@ std::string Window::Exception::translateErrorCode(HRESULT hResult)
     std::string error = pMsgBuf;
     LocalFree(pMsgBuf);
     return error;
+}
+
+Window::Exception::Exception(int line, const char *file, HRESULT hResult) : ErrorHandler(line, file)
+{
+    this->hResult = hResult;
 }
 
 Window::Exception::Exception(int line, const char *file, const char *customException) : ErrorHandler(line, file, customException)

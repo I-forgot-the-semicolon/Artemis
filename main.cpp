@@ -1,5 +1,5 @@
-#include "Engine/Window/Window.h"
-#include "Engine/Input/Input.h"
+#include "Engine/App/GameLoop.h"
+
 #include <iostream>
 #include <fcntl.h>
 #include <io.h>
@@ -8,26 +8,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 {
     try
     {
-        Window newWindow(600, 600, "Main Window");
-
-
-        BOOL result;
-        MSG msg;
-
-        Input *input = nullptr;
-        while((result = GetMessageA(&msg, nullptr, 0, 0)) > 0)
-        {
-            if(input == nullptr)
-                input = new Input(&result);
-            TranslateMessage(&msg);
-            DispatchMessageA(&msg);
-        }
-
-        if(result == -1)
-            return -1;
-        else
-            return msg.lParam;
-        delete input;
+        return GameLoop{}.gameLoop();
     }
     catch (const ErrorHandler &e)
     {

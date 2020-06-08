@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/App/GameLoop.cpp">
+			<Option target="Art_dev"/>
+		</Unit>
+		<Unit filename="C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/App/GameLoop.h">
+			<Option target="Art_dev"/>
+		</Unit>
 		<Unit filename="C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/ErrorHandlers/ErrorHandler.cpp">
 			<Option target="Art_dev"/>
 		</Unit>
@@ -96,19 +102,13 @@
 		<Unit filename="C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Input.h">
 			<Option target="Art_dev"/>
 		</Unit>
-		<Unit filename="C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Kbd.cpp">
-			<Option target="Art_dev"/>
-		</Unit>
-		<Unit filename="C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Kbd.h">
-			<Option target="Art_dev"/>
-		</Unit>
 		<Unit filename="C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/KeyList.h">
 			<Option target="Art_dev"/>
 		</Unit>
-		<Unit filename="C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Mouse.cpp">
+		<Unit filename="C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Math/Vector2.cpp">
 			<Option target="Art_dev"/>
 		</Unit>
-		<Unit filename="C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Mouse.h">
+		<Unit filename="C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Math/Vector2.h">
 			<Option target="Art_dev"/>
 		</Unit>
 		<Unit filename="C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Window.cpp">

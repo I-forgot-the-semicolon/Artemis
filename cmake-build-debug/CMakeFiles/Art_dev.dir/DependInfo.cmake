@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/App/GameLoop.cpp" "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/cmake-build-debug/CMakeFiles/Art_dev.dir/Engine/App/GameLoop.cpp.obj"
   "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/ErrorHandlers/ErrorHandler.cpp" "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/cmake-build-debug/CMakeFiles/Art_dev.dir/Engine/ErrorHandlers/ErrorHandler.cpp.obj"
   "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Input.cpp" "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/cmake-build-debug/CMakeFiles/Art_dev.dir/Engine/Input/Input.cpp.obj"
-  "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Kbd.cpp" "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/cmake-build-debug/CMakeFiles/Art_dev.dir/Engine/Input/Kbd.cpp.obj"
-  "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Input/Mouse.cpp" "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/cmake-build-debug/CMakeFiles/Art_dev.dir/Engine/Input/Mouse.cpp.obj"
+  "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Math/Vector2.cpp" "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/cmake-build-debug/CMakeFiles/Art_dev.dir/Engine/Math/Vector2.cpp.obj"
   "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/Window.cpp" "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/cmake-build-debug/CMakeFiles/Art_dev.dir/Engine/Window/Window.cpp.obj"
   "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Window/WindowClass.cpp" "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/cmake-build-debug/CMakeFiles/Art_dev.dir/Engine/Window/WindowClass.cpp.obj"
   "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/main.cpp" "C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/cmake-build-debug/CMakeFiles/Art_dev.dir/main.cpp.obj"

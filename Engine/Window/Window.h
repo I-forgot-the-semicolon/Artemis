@@ -3,11 +3,11 @@
 #include "../Windows.h"
 #include "WindowClass.h"
 #include "../ErrorHandlers/ErrorHandler.h"
-#include "../Input/Kbd.h"
-#include "../Input/Mouse.h"
+#include "../Input/Input.h"
+#include "../Math/Vector2.h"
 
 #include <iostream>
-#include <thread>
+#include <optional>
 
 class Window
 {
@@ -15,8 +15,7 @@ private:
     int width, height;
     HWND actualWindow;
     WindowClass *windowClass;
-    Kbd *inputController;
-    Mouse *mouseController;
+    Input *inputController;
 
 private:
     //Handlers
@@ -29,6 +28,8 @@ public:
     ~Window();
     Window(const Window&) = delete;
     Window& operator=(const Window&) = delete;
+    void setWindowTitle(const char *title);
+    static std::optional<int> processMessage();
 
 public:
     class Exception : public ErrorHandler

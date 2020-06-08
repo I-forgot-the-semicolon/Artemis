@@ -3,7 +3,7 @@
 
 #define Key_Left_Button 1
 #define Key_Right_Button 2
-#define Key_Middle_Button 3
+#define Key_Middle_Button 4
 
 #define Key_Escape 27
 #define Key_Space 32

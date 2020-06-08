@@ -134,47 +134,9 @@ CMakeFiles\Art_dev.dir\Engine\ErrorHandlers\ErrorHandler.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Art_dev.dir\Engine\ErrorHandlers\ErrorHandler.cpp.s /c C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\ErrorHandlers\ErrorHandler.cpp
 <<
 
-CMakeFiles\Art_dev.dir\Engine\Input\Kbd.cpp.obj: CMakeFiles\Art_dev.dir\flags.make
-CMakeFiles\Art_dev.dir\Engine\Input\Kbd.cpp.obj: ..\Engine\Input\Kbd.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Art_dev.dir/Engine/Input/Kbd.cpp.obj"
-	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Art_dev.dir\Engine\Input\Kbd.cpp.obj /FdCMakeFiles\Art_dev.dir\ /FS -c C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\Input\Kbd.cpp
-<<
-
-CMakeFiles\Art_dev.dir\Engine\Input\Kbd.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Art_dev.dir/Engine/Input/Kbd.cpp.i"
-	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\Art_dev.dir\Engine\Input\Kbd.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\Input\Kbd.cpp
-<<
-
-CMakeFiles\Art_dev.dir\Engine\Input\Kbd.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Art_dev.dir/Engine/Input/Kbd.cpp.s"
-	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Art_dev.dir\Engine\Input\Kbd.cpp.s /c C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\Input\Kbd.cpp
-<<
-
-CMakeFiles\Art_dev.dir\Engine\Input\Mouse.cpp.obj: CMakeFiles\Art_dev.dir\flags.make
-CMakeFiles\Art_dev.dir\Engine\Input\Mouse.cpp.obj: ..\Engine\Input\Mouse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Art_dev.dir/Engine/Input/Mouse.cpp.obj"
-	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Art_dev.dir\Engine\Input\Mouse.cpp.obj /FdCMakeFiles\Art_dev.dir\ /FS -c C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\Input\Mouse.cpp
-<<
-
-CMakeFiles\Art_dev.dir\Engine\Input\Mouse.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Art_dev.dir/Engine/Input/Mouse.cpp.i"
-	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\Art_dev.dir\Engine\Input\Mouse.cpp.i @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\Input\Mouse.cpp
-<<
-
-CMakeFiles\Art_dev.dir\Engine\Input\Mouse.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Art_dev.dir/Engine/Input/Mouse.cpp.s"
-	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
- /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Art_dev.dir\Engine\Input\Mouse.cpp.s /c C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\Input\Mouse.cpp
-<<
-
 CMakeFiles\Art_dev.dir\Engine\Input\Input.cpp.obj: CMakeFiles\Art_dev.dir\flags.make
 CMakeFiles\Art_dev.dir\Engine\Input\Input.cpp.obj: ..\Engine\Input\Input.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Art_dev.dir/Engine/Input/Input.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Art_dev.dir/Engine/Input/Input.cpp.obj"
 	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Art_dev.dir\Engine\Input\Input.cpp.obj /FdCMakeFiles\Art_dev.dir\ /FS -c C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\Input\Input.cpp
 <<
@@ -191,15 +153,53 @@ CMakeFiles\Art_dev.dir\Engine\Input\Input.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Art_dev.dir\Engine\Input\Input.cpp.s /c C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\Input\Input.cpp
 <<
 
+CMakeFiles\Art_dev.dir\Engine\App\GameLoop.cpp.obj: CMakeFiles\Art_dev.dir\flags.make
+CMakeFiles\Art_dev.dir\Engine\App\GameLoop.cpp.obj: ..\Engine\App\GameLoop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Art_dev.dir/Engine/App/GameLoop.cpp.obj"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Art_dev.dir\Engine\App\GameLoop.cpp.obj /FdCMakeFiles\Art_dev.dir\ /FS -c C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\App\GameLoop.cpp
+<<
+
+CMakeFiles\Art_dev.dir\Engine\App\GameLoop.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Art_dev.dir/Engine/App/GameLoop.cpp.i"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\Art_dev.dir\Engine\App\GameLoop.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\App\GameLoop.cpp
+<<
+
+CMakeFiles\Art_dev.dir\Engine\App\GameLoop.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Art_dev.dir/Engine/App/GameLoop.cpp.s"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Art_dev.dir\Engine\App\GameLoop.cpp.s /c C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\App\GameLoop.cpp
+<<
+
+CMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.obj: CMakeFiles\Art_dev.dir\flags.make
+CMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.obj: ..\Engine\Math\Vector2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Art_dev.dir/Engine/Math/Vector2.cpp.obj"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.obj /FdCMakeFiles\Art_dev.dir\ /FS -c C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\Math\Vector2.cpp
+<<
+
+CMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Art_dev.dir/Engine/Math/Vector2.cpp.i"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe > CMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\Math\Vector2.cpp
+<<
+
+CMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Art_dev.dir/Engine/Math/Vector2.cpp.s"
+	C:\PROGRA~2\MICROS~1\2019\COMMUN~1\VC\Tools\MSVC\1426~1.288\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.s /c C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\Engine\Math\Vector2.cpp
+<<
+
 # Object files for target Art_dev
 Art_dev_OBJECTS = \
 "CMakeFiles\Art_dev.dir\main.cpp.obj" \
 "CMakeFiles\Art_dev.dir\Engine\Window\Window.cpp.obj" \
 "CMakeFiles\Art_dev.dir\Engine\Window\WindowClass.cpp.obj" \
 "CMakeFiles\Art_dev.dir\Engine\ErrorHandlers\ErrorHandler.cpp.obj" \
-"CMakeFiles\Art_dev.dir\Engine\Input\Kbd.cpp.obj" \
-"CMakeFiles\Art_dev.dir\Engine\Input\Mouse.cpp.obj" \
-"CMakeFiles\Art_dev.dir\Engine\Input\Input.cpp.obj"
+"CMakeFiles\Art_dev.dir\Engine\Input\Input.cpp.obj" \
+"CMakeFiles\Art_dev.dir\Engine\App\GameLoop.cpp.obj" \
+"CMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.obj"
 
 # External object files for target Art_dev
 Art_dev_EXTERNAL_OBJECTS =
@@ -208,9 +208,9 @@ Art_dev.exe: CMakeFiles\Art_dev.dir\main.cpp.obj
 Art_dev.exe: CMakeFiles\Art_dev.dir\Engine\Window\Window.cpp.obj
 Art_dev.exe: CMakeFiles\Art_dev.dir\Engine\Window\WindowClass.cpp.obj
 Art_dev.exe: CMakeFiles\Art_dev.dir\Engine\ErrorHandlers\ErrorHandler.cpp.obj
-Art_dev.exe: CMakeFiles\Art_dev.dir\Engine\Input\Kbd.cpp.obj
-Art_dev.exe: CMakeFiles\Art_dev.dir\Engine\Input\Mouse.cpp.obj
 Art_dev.exe: CMakeFiles\Art_dev.dir\Engine\Input\Input.cpp.obj
+Art_dev.exe: CMakeFiles\Art_dev.dir\Engine\App\GameLoop.cpp.obj
+Art_dev.exe: CMakeFiles\Art_dev.dir\Engine\Math\Vector2.cpp.obj
 Art_dev.exe: CMakeFiles\Art_dev.dir\build.make
 Art_dev.exe: CMakeFiles\Art_dev.dir\objects1.rsp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\warl0\Desktop\Escritorio\Coding\C++\Art-dev\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable Art_dev.exe"
