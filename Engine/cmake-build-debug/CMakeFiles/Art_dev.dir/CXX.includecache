@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Time/Time.cpp
+Time.h
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Time/Time.h
+
+C:/Users/warl0/Desktop/Escritorio/Coding/C++/Art-dev/Engine/Time/Time.h
+chrono
+-
+
